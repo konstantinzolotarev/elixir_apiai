@@ -3,16 +3,5 @@ defmodule ElixirApiai do
   Documentation for ElixirApiai.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirApiai.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def start, do: :application.ensure_all_started(:httpoison)
 end
