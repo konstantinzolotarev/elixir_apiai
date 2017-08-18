@@ -43,6 +43,7 @@ defmodule ElixirApiai.Query do
      timestamp: "2017-08-17T14:40:05.186Z"}}
   ```
   """
+  @spec query(String.t, String.t, map) :: {:ok, map} | {:error, any}
   def query(query, session_id, options \\ %{}) do
     body = %{
       query: query,
