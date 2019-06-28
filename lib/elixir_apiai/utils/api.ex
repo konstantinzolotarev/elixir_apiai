@@ -52,4 +52,5 @@ defmodule ElixirApiai.Utils.Api do
 
   defp status({:ok, %{status: %{code: 200, errorType: "success"}}} = data), do: data
   defp status({:ok, data}), do: {:error, data}
+
 end
